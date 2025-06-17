@@ -1,0 +1,14 @@
+h3{
+     color:chartreuse !important;
+     font-size: 70px;
+     background-color: black;
+}
+p{
+    color:blue;
+    background-color:rgb(177, 113, 113);
+    font-size:50px;
+}
+h2{
+    color:rgb(0, 47, 255);
+    background-color:rgb(34, 31, 31)
+}
