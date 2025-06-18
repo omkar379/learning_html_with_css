@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Format</title>
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+         .t_uppercase{
+            text-transform: uppercase;
+            color:rgb(98, 0, 255);
+            text-decoration: underline;
+        }
+        .t_lowercase{
+            text-transform: lowercase;
+            color:brown;
+            text-align: center;
+            text-decoration: overline;
+        }
+        .t_capitalize{
+             text-transform: capitalize;
+             color:blue;
+             text-decoration: line-through;
+        }
+        .t_center{
+            text-align: center;
+            text-decoration: underline overline line-through;
+        }
+        .t_right{
+            text-align: right;
+        }
+        .f_size{
+            font-size: 50px;
+        }
+        /* for text decoration: underline , overline , linethrough */
+        
+        .t_indent{
+            text-indent: 150px;
+        }
+        .t_height{
+            line-height:40px
+        }
+        .w_spacing{
+            word-spacing: 50px;
+        }
+        .l_spacing{
+            letter-spacing: 30px;
+        }
+        .t_shadow{
+            font-size: 80px;
+            text-align: center;
+            color:aqua;
+            text-shadow: 8px 10px 8px red;
+
+            /* (4px=horizontal  5px=vertical   8px= for blur) */
+        }
+        
+    </style> 
+</head>
+<body>
+    <!-- class selctor uppercase , lowercase , capitalize -->
+    <h1 class="t_uppercase">Hypersonic missiles Fattah-1 fired at Israel, says Iran</h1>
+    <h1 class="t_lowercase">Hypersonic missiles Fattah-1 fired at Israel, says Iran</h1>
+    <h1 class="t_capitalize">khamenei says iran won't surrender, warns against us strike</h1>
+
+         <!-- class selector center , right -->
+    <h1 class="t_center">This for Center align</h1>
+    <h1 class="t_right">This for Right align</h1>
+
+    <!-- (uppercase with center) (lowercase with right) (font size add) -->
+     <h1 class="t_uppercase t_center f_size">Hypersonic missiles Fattah-1 fired at Israel, says Iran</h1>
+     <h1 class="t_lowercase t_right">Hypersonic missiles Fattah-1 fired at Israel, says Iran</h1>
+
+     <!-- for paragraph class ( t_indent , t_height) -->
+        <p class="t_indent t_height" >Improve your grammar with 6 Minute Grammar - medium, our grammar series for medium level learners. On this page you'll find a range of medium level grammar programmes to boost your language skills. Each programme covers a key grammar point with all the explanations, examples and activities you need to become a medium grammar champion - in just 6 minutes. Grammar topics include present tenses, the present perfect continuous, the past perfect, zero conditionals, reported speech, relative clauses, passive voice, intensifiers and much, much more.Investigators now face the grim task of sifting through the wreckage and decoding the cockpit voice and flight data recorders of the Boeing 787 Dreamliner to piece together what went catastrophically wrong in the seconds after take-off. Under international rules set by the UN aviation body ICAO, a preliminary investigation report should be released within 30 days, with the final report ideally completed within 12 months.</p>
+
+        <!-- for word , letter spacing  (w_spacing   l_spacing) -->
+       <h4 class="w_spacing">i am from pune</h4>
+       <h4 class="l_spacing">i am from pune</h4>
+
+        <!-- for shadow -->
+         <h1 class="t_shadow">Omkar</h1>
+
+</body>
+</html>
