@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo_classes</title>
+    <style>
+
+        /* hover effect css */
+        .hover_effect:hover{
+            color: red;
+            background-color: yellow;
+            font-size: 40px;
+            text-shadow: 3px 3px 3px blue;
+        }
+        .hover_effect{
+            color:blueviolet;
+
+            /* active css */
+         }
+         button{
+             background-color: green;
+             font-size: 20px;
+             padding: 15px;
+             color: white;
+             border-radius: 10px;
+             cursor:pointer;
+         }
+         button:active{
+            background-color: blue;
+            font-size: 35px;
+            padding: 25px;
+            color: white;
+            border-radius: 20px;
+
+         }
+
+         /* visited css */
+         a:visited{
+            color: green;
+
+            /* focus css */
+        }
+        input:focus{
+            background-color: lightblue;
+
+            /* child css */
+        }
+         ul{
+            width: 300px;
+             padding: 15px; 
+            list-style-type:none;
+
+        }  
+         li{
+            padding: 15px;
+            border: 2px solid red;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 4px black;
+             font-size: 20px;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        } 
+        li:nth-child(odd){
+            background-color: lightblue;
+        }
+        li:nth-child(even){
+            background-color: bisque;
+           
+        }
+        li:nth-child(5){
+            background-color:blueviolet;
+        }
+        li:first-child{
+            background-color: black;
+            color: white;
+        }
+        li:last-child{
+            background-color: black;
+            color: white;
+
+            /* attribute selector css */
+        }
+        input[type="text"]{
+            border: 5px double red;
+            padding: 20px;
+        }
+        input[placeholder]{
+            background-color:black;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- hover_effect -->
+    <h1 class="hover_effect">Hello Omkar</h1>
+
+   <!-- active example -->
+    <button>Click me</button>
+  <br><br><br>
+      <!-- visited example -->
+       <a href="https://www.amazon.in/">Cilck here</a>
+
+       <!-- focus example -->
+       <input type="number" placeholder="Enter Phn number">
+       <br><br><br>  
+       <!-- child example -->
+       <!-- ul>li*10{item $}-->
+         <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+            <li>item 9</li>
+            <li>item 10</li>
+         </ul>
+
+         <!-- CCS on Atribute type -->
+          <input type="text" placeholder="Enter Name">
+    </body>
+</html>

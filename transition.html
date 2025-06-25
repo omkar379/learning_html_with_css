@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 140px;
+            gap: 10px;
+             background-color: lightblue; 
+        }
+        .box{
+            background-color:orange;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            box-shadow: 3px 3px 3px black;
+            color: white;
+            font-weight: 800;
+            font-size: 25px ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: transform 1s linear 500ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1:hover{
+             transform: translate(130px , 100px);
+             background-color: lightpink;
+        }
+         .box2:hover{
+             transform: translateX(150px );
+             background-color: lightpink;
+        }
+         .box3:hover{
+             transform: translateY( 150px);
+             background-color: lightpink;
+        }
+         .box4:hover{
+             transform:Rotate(160deg);
+             background-color: lightpink;
+        }
+        .box5:hover{
+             transform:skew(45deg);
+             background-color: lightpink;
+        }
+         .box6:hover{
+             transform:skewY(45deg);
+             background-color: lightpink;
+        }
+         .box7:hover{
+             transform:scale(3);
+             background-color: lightpink;
+        }
+         .box8:hover{
+             transform:rotate(30deg) scale(1.6) translateY(50px);
+             background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Translate</div>
+        <div class="box box2">Translate X</div>
+        <div class="box box3">Translate Y</div>
+        <div class="box box4">Rotate</div>
+        <div class="box box5">Skew</div>
+        <div class="box box6">Skew Y</div>
+        <div class="box box7">Scale Y</div>
+         <div class="box box8">Scale Y</div>
+    </div>
+    
+</body>
+</html>
