@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Animation</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+             background-color:yellow; 
+            position:relative;
+            animation:myfirstanimation;
+            /* -webkit-animation: myfirstanimation ; for old browser or safari browser user */
+            animation-duration:10s;
+            animation-iteration-count:5;
+            animation-delay:1s;
+            animation-direction:alternate;
+            box-shadow: 4px  4px 5px black;
+            border: 3px solid black;
+            border-radius: 10px;
+            /* reverse,alternate-reverse */
+        }
+        @keyframes myfirstanimation
+        {
+            0%{background-color:yellow;left:0px;top:0px;}
+            25%{background-color:red;left:300px;top:0px;}
+            50%{background-color:blue;left:300px;top:300px;}
+            75%{background-color:green;left:0px;top:300px;}
+            100%{background-color:yellow;left:0px;top:0px;}
+        }
+       
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

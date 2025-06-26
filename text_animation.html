@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        #txt{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            font-family: sans-serif;
+            letter-spacing: 7px;
+            font-size: 70px;
+            font-weight: 700;
+            position: relative;
+            transform-style: preserve-3d;
+            -webkit-perspective: 100px;
+        }
+        #txt >b{
+            height: 90px;
+            box-shadow: 2px 30px 15px gray;
+            color: azure;
+            background: linear-gradient(to left,green,black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-transform-origin: bottom;
+            transform: rotateX(-85deg);
+            animation: getready;
+            animation-duration: 5s;
+            animation-iteration-count: infinite
+        }
+        #txt>b:nth-child(1){
+            animation-delay: 0s;
+        }
+        #txt>b:nth-child(2){
+            animation-delay: 0.25s;
+        }
+        #txt>b:nth-child(3){
+            animation-delay: 0.50s;
+        }
+        #txt>b:nth-child(4){
+            animation-delay: 0.75s;
+        }
+        #txt>b:nth-child(5){
+            animation-delay: 1s;
+        }
+        @keyframes getready{
+            10%,50%{
+                transform: rotateX(0);
+            }
+            0%,60%,100%{
+                transform: rotateX(-85);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="txt">
+        <b>O</b> <b>M</b> <b>K</b> <b>A</b> <b>R</b>
+    </div>
+</body>
+</html>

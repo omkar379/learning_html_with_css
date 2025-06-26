@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_properties</title>
+    <style>
+        /* linear Gradient exmple */
+        div{
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500px;
+            padding: 10px;
+            margin: 20px;
+        }
+        .linear{
+            height: 700px;
+            width: 1000px;
+            border: 2px solid black;
+             box-shadow: 4px 4px 4px black;
+            background: linear-gradient(to left,red,black,green,rgb(167, 167, 38));
+        }
+
+        /* radial Gradient example */
+        .radial{
+            height: 500px;
+            background: radial-gradient(circle at center,black,rgb(150, 150, 35),red);
+            border: 2px solid black;
+            width: 1000px;
+            box-shadow: 4px 4px 4px black;
+        }
+
+        /* conic gradient example */
+        .conic{
+            height: 500px;
+            background: conic-gradient(from 278deg, rgb(165, 37, 37),green,rgb(153, 153, 36),rgb(32, 32, 165));
+              width: 1000px;
+            box-shadow: 4px 4px 4px black;
+        }
+    </style>
+</head>
+<body>
+    <!-- linear-gradient example -->
+    <div class="linear">Linear Gradient Example
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure asperiores doloribus nisi, magni suscipit quae labore, autem culpa ipsam vero, incidunt dicta tempore commodi. Nobis facere eligendi debitis fugiat!</p>
+    </div>
+
+    <!-- radial-gradient example -->
+    <div class="radial">Radil Gradient Example</div>
+
+    <!-- conic Gradient example -->
+     <div class="conic">Conic Gradient Example</div>
+    
+</body>
+</html>
