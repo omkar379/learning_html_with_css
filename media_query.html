@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            width: 100%;
+            height: auto;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+            margin: 20px auto;
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+        .info{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(148, 243, 243);
+            color: black;
+            font-size: 18px;
+            border-left: 6px solid gray;
+            margin-bottom: 20px;
+        }
+        .responsive-image{
+            width: 100%;
+            max-width: 600px;
+            border: 4px solid red;
+            padding: 30px;
+            margin: auto;
+        }
+            /* mobile view 480px or less */
+        @media(max-width:480px){
+            .box{
+                background-color: #0000ffa6;
+                font-size: 10px;
+                width: 80%;
+            }
+            .info{
+                background-color: orange;
+                color: white;
+            }
+            .responsive-image{
+                display: none;
+            }
+             h2{
+                color: white;
+                text-shadow: 3px 5px 6px yellow;
+        }
+        @media (max-width:768px){
+            .box{
+                background-color: brown;
+                font-size: 100px;
+                width: 100%;
+            }
+            .info{
+                background-color: red;
+                color: white;
+            }
+          
+
+        }
+        }
+        @media(min-width:800px) and (max-width:900px){
+            .box{
+                background-color: yellow;
+                font-size: 100px;
+                width: 100%;
+            }
+            .info{
+                background-color: rgb(95, 204, 95);
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Responsive Box</div>
+
+    <div class="info">
+        <H2>About us</H2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut et odit, repellat dicta explicabo dolorum incidunt qui laudantium veniam suscipit, voluptatum similique ex animi facere commodi, quia necessitatibus minima esse!</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis, quas eaque, deserunt, necessitatibus velit repellat similique iste minus consequatur vero atque odit. Fugit quos non maxime deserunt. Molestiae, laudantium!
+        </p>
+     
+    </div>
+       <img src="images/city.jpg" alt="image"
+        class="responsive-image">
+</body>
+</html>
